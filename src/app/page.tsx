@@ -1,44 +1,10 @@
 import Link from 'next/link'
-import { MountainIcon } from 'lucide-react'
 
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
+import { Input, Button } from '@/components/ui'
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col min-h-[100dvh] dark">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-white dark:bg-gray-900">
-        <Link className="flex items-center justify-center" href="#">
-          <MountainIcon className="h-6 w-6 text-black dark:text-white" />
-          <span className="sr-only">Acme Inc</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            Features
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            Pricing
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            About
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+    <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1 bg-white dark:bg-gray-900">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -140,25 +106,6 @@ const HomePage = () => {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white dark:bg-gray-900">
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2024 Acme Inc. All rights reserved.
-        </p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            Terms of Service
-          </Link>
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-black dark:text-white"
-            href="#"
-          >
-            Privacy
-          </Link>
-        </nav>
-      </footer>
     </div>
   )
 }
