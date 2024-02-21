@@ -1,42 +1,38 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/ngbCfZaAcMi
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import Link from 'next/link'
+import { MountainIcon } from 'lucide-react'
+
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { MountainIcon } from 'lucide-react'
 
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-[100dvh] dark">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-white dark:bg-gray-900">
         <Link className="flex items-center justify-center" href="#">
-          <MountainIcon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          <MountainIcon className="h-6 w-6 text-black dark:text-white" />
           <span className="sr-only">Acme Inc</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             Features
           </Link>
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             Pricing
           </Link>
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             About
           </Link>
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-sm font-medium hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             Contact
@@ -63,14 +59,14 @@ const HomePage = () => {
                 alt="Image"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
-                src="/placeholder.svg"
+                src="/assets/images/placeholder.svg"
                 width="550"
               />
               <div className="flex flex-col justify-center space-y-4">
                 <ul className="grid gap-6">
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                      <h3 className="text-xl font-bold text-black dark:text-white">
                         E-commerce
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -81,7 +77,7 @@ const HomePage = () => {
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                      <h3 className="text-xl font-bold text-black dark:text-white">
                         Social Media
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -91,7 +87,7 @@ const HomePage = () => {
                   </li>
                   <li>
                     <div className="grid gap-1">
-                      <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                      <h3 className="text-xl font-bold text-black dark:text-white">
                         Productivity
                       </h3>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -109,7 +105,7 @@ const HomePage = () => {
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-blue-600 dark:text-blue-400">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-black dark:text-white">
                 Experience the workflow the best frontend teams love.
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -134,7 +130,7 @@ const HomePage = () => {
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 Sign up to get notified when we launch.
                 <Link
-                  className="underline underline-offset-2 text-blue-600 dark:text-blue-400"
+                  className="underline underline-offset-2 text-black dark:text-white"
                   href="#"
                 >
                   Terms & Conditions
@@ -150,13 +146,13 @@ const HomePage = () => {
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
-            className="text-xs hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-xs hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             Terms of Service
           </Link>
           <Link
-            className="text-xs hover:underline underline-offset-4 text-blue-600 dark:text-blue-400"
+            className="text-xs hover:underline underline-offset-4 text-black dark:text-white"
             href="#"
           >
             Privacy
