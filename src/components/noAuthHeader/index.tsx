@@ -15,12 +15,15 @@ export const NoAuthHeader: React.FC = () => {
         <span className="sr-only">Mountain Code</span>
       </Link>
 
-      {/*Theme Button*/}
+      {/*Theme Button
+      
       <div className="ml-auto mr-4 cursor-pointer text-black dark:text-white ">
         <SunIcon />
       </div>
+      
+      */}
 
-      {/*Links Buttons*/}
+      {/*
       <nav className="flex gap-4 sm:gap-6 max-[470px]:hidden">
         {links.map(item => (
           <Link
@@ -36,6 +39,7 @@ export const NoAuthHeader: React.FC = () => {
       <div className="hidden max-[470px]:flex">
         <MenuIcon />
       </div>
+      */}
     </header>
   )
 }
